@@ -105,137 +105,18 @@ public class DES
     public static char[] initialPermutation(char[] teks)
     {
         char[] baru = new char[teks.length];
+        int[] ip = 
+        {57, 49, 41, 33, 25, 17, 9, 1,
+        59, 51, 43, 35, 27, 19, 11, 3,
+        61, 53, 45, 37, 29, 21, 13, 5,
+        63, 55, 47, 39, 31, 23, 15, 7,
+        56, 48, 40, 32, 24, 16, 8, 0,
+        58, 50, 42, 34, 26, 18, 10, 2,
+        60, 52, 44, 36, 28, 20, 12, 4,
+        62, 54, 46, 38, 30, 22, 14, 6};
         char[] temp = teks;
         for(int i = 0; i < baru.length; i++) {
-            if(i == 0) {
-                baru[i] = temp[57];
-            } else if(i == 1){
-                baru[i] = temp[49];
-            } else if(i == 2){
-                baru[i] = temp[41];
-            } else if(i == 3){
-                baru[i] = temp[33];
-            } else if(i == 4){
-                baru[i] = temp[25];
-            } else if(i == 5){
-                baru[i] = temp[17];
-            } else if(i == 6){
-                baru[i] = temp[9];
-            } else if(i == 7){
-                baru[i] = temp[1];
-            } else if(i == 8){
-                baru[i] = temp[59];
-            } else if(i == 9){
-                baru[i] = temp[51];
-            } else if(i == 10){
-                baru[i] = temp[43];
-            } else if(i == 11){
-                baru[i] = temp[35];
-            } else if(i == 12){
-                baru[i] = temp[27];
-            } else if(i == 13){
-                baru[i] = temp[19];
-            } else if(i == 14){
-                baru[i] = temp[11];
-            } else if(i == 15){
-                baru[i] = temp[3];
-            } else if(i == 16){
-                baru[i] = temp[61];
-            } else if(i == 17){
-                baru[i] = temp[53];
-            } else if(i == 18){
-                baru[i] = temp[45];
-            } else if(i == 19){
-                baru[i] = temp[37];
-            } else if(i == 20){
-                baru[i] = temp[29];
-            } else if(i == 21){
-                baru[i] = temp[21];
-            } else if(i == 22){
-                baru[i] = temp[13];
-            } else if(i == 23){
-                baru[i] = temp[5];
-            } else if(i == 24){
-                baru[i] = temp[63];
-            } else if(i == 25){
-                baru[i] = temp[55];
-            } else if(i == 26){
-                baru[i] = temp[47];
-            } else if(i == 27){
-                baru[i] = temp[39];
-            } else if(i == 28){
-                baru[i] = temp[31];
-            } else if(i == 29){
-                baru[i] = temp[23];
-            } else if(i == 30){
-                baru[i] = temp[15];
-            } else if(i == 31){
-                baru[i] = temp[7];
-            } else if(i == 32){
-                baru[i] = temp[56];
-            } else if(i == 33){
-                baru[i] = temp[48];
-            } else if(i == 34){
-                baru[i] = temp[40];
-            } else if(i == 35){
-                baru[i] = temp[32];
-            } else if(i == 36){
-                baru[i] = temp[24];
-            } else if(i == 37){
-                baru[i] = temp[16];
-            } else if(i == 38){
-                baru[i] = temp[8];
-            } else if(i == 39){
-                baru[i] = temp[0];
-            } else if(i == 40){
-                baru[i] = temp[58];
-            } else if(i == 41){
-                baru[i] = temp[50];
-            } else if(i == 42){
-                baru[i] = temp[42];
-            } else if(i == 43){
-                baru[i] = temp[34];
-            } else if(i == 44){
-                baru[i] = temp[26];
-            } else if(i == 45){
-                baru[i] = temp[18];
-            } else if(i == 46){
-                baru[i] = temp[10];
-            } else if(i == 47){
-                baru[i] = temp[2];
-            } else if(i == 48){
-                baru[i] = temp[60];
-            } else if(i == 49){
-                baru[i] = temp[52];
-            } else if(i == 50){
-                baru[i] = temp[44];
-            } else if(i == 51){
-                baru[i] = temp[36];
-            } else if(i == 52){
-                baru[i] = temp[28];
-            } else if(i == 53){
-                baru[i] = temp[20];
-            } else if(i == 54){
-                baru[i] = temp[12];
-            } else if(i == 55){
-                baru[i] = temp[4];
-            } else if(i == 56){
-                baru[i] = temp[62];
-            } else if(i == 57){
-                baru[i] = temp[54];
-            } else if(i == 58){
-                baru[i] = temp[46];
-            } else if(i == 59){
-                baru[i] = temp[38];
-            } else if(i == 60){
-                baru[i] = temp[30];
-            } else if(i == 61){
-                baru[i] = temp[22];
-            } else if(i == 62){
-                baru[i] = temp[14];
-            } else {
-                baru[i] = temp[6];
-            }
+            baru[i] = teks[ip[i]];
         }
         return baru;
     }
