@@ -1,3 +1,14 @@
+/* Copyright (c) 2016 Dennis Pratama Kamah - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * You may use, distribute and modify this code under the
+ * terms of the XYZ license, which unfortunately won't be
+ * written for another century.
+ *
+ * You should have received a copy of the XYZ license with
+ * this file. If not, please write to: dennis.pratama@ui.ac.id or dkamah913@gmail.com
+ */
+
 import java.util.Scanner;
 
 /** 
